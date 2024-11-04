@@ -5,11 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %></title>
   <link href="/tailwind.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/all.min.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-[#e8652c]">
   <nav>
-    <a>Logo</a>
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+  
+      <!-- Logo sebagai gambar -->
+      <div class="flex items-center space-x-2">
+        <a href="#">
+          <img src="/logo.png" alt="Logo" class="w-10 h-10"> <!-- Ganti ukuran sesuai kebutuhan -->
+        </a>
+      </div>
+  
+      <!-- Menu ikon burger untuk navigasi mobile -->
+      <div id="burger-icon" class="text-gray-600 hover:text-blue-500 md:hidden cursor-pointer">
+        <i class="fas fa-bars text-2xl"></i> <!-- Ikon burger -->
+      </div>
+  
+      <!-- Menu lengkap untuk layar lebih besar dan mobile -->
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="#" class="text-gray-600 hover:text-blue-500">Home</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-500">About</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-500">Services</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+      </ul>
+  
+    </div>
   </nav>
+  
   <h1 class="text-2xl font-bold text-blue-500">Hello, world</h1>
+  
+  <script src="/js/main.js"></script>
 </body>
 </html>

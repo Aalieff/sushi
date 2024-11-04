@@ -4,6 +4,7 @@ const port = 3000
 
 app.set("view engine", "ejs")
 app.use(express.static('public'));
+app.use(express.static('node_modules/@fortawesome/fontawesome-free'));
 
 app.get("/", (req, res)=>{
   const data = {
